@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./sal.css">
+    <script src="./sal.js"></script>
+    <title>Salary Calculator</title>
+</head>
+<body>
+    <section class="main_wrapper">
+        <div class="container-fluid">
+            <div class="row">
+            <h1 class="head text-center">Employee Salary Calculator</h1>
+            <div class="row">
+                <div class="col-sm mb-5">
+                    <div class="card">
+                        <div class="name">
+                            <label for="">Employee name :</label>
+                            <input type="text" name="" id="ename" placeholder="Name">
+                        </div>
+                        <div class="id">
+                            <label for="">Employee ID :</label>
+                            <input type="text" name="" id="eid" placeholder="123etc">
+                        </div>
+                        <div class="salary">
+                            <label for="">Employee monthly salary :</label>
+                            <input type="text" name="" id="esalary" placeholder="in numbers">
+                        </div>
+                        <div class="tds">
+                            <label for="">Employee TDS % (cut) :</label>
+                            <input type="text" name="" id="etds" placeholder="--%">
+                        </div>
+                        <div class="leave">
+                            <label for="">Employee leave :</label>
+                            <input type="text" name="" id="eleave" placeholder="in numbers">
+                        </div>
+                        <div class="month">
+                            <label for="">Month :</label>
+                            <div class="col-4">
+                                <select class="form-select" id="month">
+                                    <option selected>--select month--</option>
+                                    <option value="January">January</option>
+                                    <option value="February">February</option>
+                                    <option value="March">March</option>
+                                    <option value="April">April</option>
+                                    <option value="May">May</option>
+                                    <option value="June">June</option>
+                                    <option value="July">July</option>
+                                    <option value="August">August</option>
+                                    <option value="September">September</option>
+                                    <option value="October">October</option>
+                                    <option value="November">November</option>
+                                    <option value="December">December</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="year">
+                            <label for="">Year :</label>
+                            <input type="text" name="" maxlength="4" id="year" placeholder="xxxx">
+                        </div>
+                        <div class="bonus">
+                            <label for="">Employee bouns :</label>
+                            <input type="text" name="" id="ebonus" placeholder="in numbers">
+                        </div>
+                        <button type="button" class="primary-btn" onclick="calculate()">
+                            Submit
+                        </button>
+                    </div>
+                </div>
+                <div class="col-sm-5">
+                    <div class="card" id="output">
+                        ----------------------------------------
+                        <h3>
+                            Date : <span id="out_date"></span>
+                        </h3>
+                        ----------------------------------------<br>
+                        <h3>Employee name: <span id="out_name"> </span></h3>
+                        <h3>Employee ID: <span id="out_id"> </span></h3>
+                        <h3>Monthly salary: <span id="out_msalary"> </span></h3>
+                        <h3>Yearly salary: <span id="out_ysalary"> </span></h3>
+                        <h3>Daily salary: <span id="out_daily"> </span></h3>
+                        <h3>Leave amount: <span id="out_leave"> </span></h3>
+                        <h3>TDS amount: <span id="out_tds"> </span></h3>
+                        <h3>Bonus: <span id="out_bonus"> </span></h3>
+                        <h3>Final pay salary: <span id="out_final"> </span></h3>
+                        <button type="button" class="secondary-btn" id="print" onclick="window.print()">
+                            Print
+                        </button>
+                        <button type="button" class="logout-btn" onclick="logout()">Log out</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

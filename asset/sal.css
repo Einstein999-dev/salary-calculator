@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+body{
+    background-image: url(/img/money-gde6110597_1280_1200x768.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+h1{
+    padding: 30px;
+    font-family: 'Righteous', cursive;
+}
+.primary-btn{
+    height: 40px;
+    width: 150px;
+    margin-top: 34px;
+    padding: 4px;
+    border-radius: 10px;
+    background-color: rgb(104, 166, 104);
+    color: black;
+    transition: all 0.3s ease-in-out;
+}
+.primary-btn:hover{
+    background-color: black;
+    color: white;
+    transform: scale(1.1);
+}
+.secondary-btn{
+    height: 40px;
+    width: 120px;
+    margin-top: 34px;
+    padding: 4px;
+    border-radius: 10px;
+    background-color: rgba(251, 36, 68, 0.756);
+    color: black;
+    transition: all 0.3s ease-in-out;
+}
+.secondary-btn:hover{
+    background-color: black;
+    color: white;
+    transform: scale(1.1);
+}
+.logout-btn{
+    height: 40px;
+    width: 120px;
+    margin-top: 34px;
+    padding: 4px;
+    border-radius: 10px;
+    background-color: rgba(36, 104, 251, 0.756);
+    color: black;
+    transition: all 0.3s ease-in-out;
+}
+.logout-btn:hover{
+    background-color: black;
+    color: white;
+    transform: scale(1.1);
+}
+label{
+    padding: 15px;
+}
+input{
+    border-radius: 10px;
+    border: 1px solid rgba(34, 94, 147, 0.594);
+    padding: 5px;
+    background-color: rgba(255, 255, 255, 0.493);
+}
+.form-select{
+    margin-top: -45px;
+    margin-left:90px;
+    margin-bottom: 10px;
+    background-color: rgba(255, 255, 255, 0.493);
+    border: 1px solid rgba(34, 94, 147, 0.594);
+}
+.form-select:focus{
+    border: none;
+}
+.card{
+    padding: 50px;
+    background: rgba(255, 255, 255, 0.647);
+    border: 2px solid;
+    border-radius: 10px;
+}
+
